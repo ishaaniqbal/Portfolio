@@ -1,126 +1,196 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Ishaan's Project Details</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Ishaan's Project Details</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Highlights of My Project Experience</h1>
-						<p></p>
-					</header>
+    <style>
 
-				<!-- Main -->
-					<div id="main">
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
 
-						<span class="image main"><img src="Agileproject5.jpg" alt="" /></span>
-						<br>
-						<span class="image"><img src="agileproject2.jpg" alt="" /></span>
+.project-row {
+    width: 100%;
+}
 
-						<!-- Content -->
-						 
-							<section id="content" class="main">
-								
-								<div class="row">
-									<div class="col-4 col-6-medium col-12-small">
-										<article class="box style2">
-											<h3><a href="https://debicheck.co.za/"><strong><span style="color: rgba(66, 0, 128, 0.589);">Debicheck</span></strong></a></h3>
-											<p>Debicheck is an electronic debit order system in South Africa designed to enhance the security and efficiency of recurring payments. It aims to simplify the debit order process for both consumers and businesses, ensuring greater control and transparency in debit transactions.<br>
-												<strong>KEY FEATURES OF DEBICHECK</strong>
-												Authorization Process , Real-Time Notifications , Reversal Process, Standardized Format , Integration with Banking Systems <br>
-												<strong>BENEFITS</strong> <br>
-												Enhanced Customer Trust , Reduced Fraud , Operational Efficiency , Improved Cash Flow Management.
-												We had 3 types of transaction TT1 (Real time through messages) , TT2 (batch processing) , TT3 (Real time authentication through USSD)
-												So basically three phases were involved; Prepayment; The mandate part, payment: the collection part and post payment includes bank error, dispute i.e. after the settlement has been done.
-												<br>
-												<br>
-												<br>
-											</p>
-										</article>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<article class="box style2">
-											<h3><a href="#"><strong><span style="color: rgba(66, 0, 128, 0.589);">Payments & Collection</span></strong></a></h3>
-											<p>I was also involved in industry testing so basically I coordinated with BankServ (ACH) for US on them and Them on US scenario while dealing with other banks for payments and collection
-												I was also leading a small compliance project which is CMA cross border Monetary area.
-												We all know that NAMIBIA , SWAZILAND and LESOTHO uses the same currency so money laundering may happen for terrorism.
-												It was basically a AML project where we patched a separate file which contained details of debtor and creditor so that legit transaction happens between the bank and legal action must be taken in case of fraudulent activity.
-												Transaction passes through SAFEWATCH and SWIFT for AML check.If debtor and creditor both are legit then it goes to successful transaction.
-												<br>
-												<br>
-												<br>
-												<br>
-												<br>
-												<br>
-												<br>
-											
-											</p>
-										</article>
-									</div> 
-									<div class="col-4 col-6-medium col-12-small">
-										<article class="box style2">
-											<h3><a href="#"><strong><span style="color: rgba(66, 0, 128, 0.589);">Other Projects</span></strong></a></h3>
-											<p><strong>FNZ WEALTH MANAGEMENT </strong> <br>
-												FNZ is wealth management, financial planning, asset management platform and it provides a global, end-to-end wealth management platform that integrates modern technology, business and investment operations.
-												<br>
-												<strong>BNY MELLON</strong> <br>
-												 It is a custodian bank which does international transactions for its client. So, to migrate the current banking system's messaging infrastructure from the legacy financial messaging standard to the SWIFT (Society for Worldwide Interbank Financial Telecommunication) messaging system. This migration aims to enhance the efficiency, security, and reliability of our financial transactions and communications on an international scale.
-												<br>
-												<strong>FEDEX LOGISTICS</strong> <br>
-												FedEx offers a wide range of services such as express , ground , freight and international tailored to meet different shipping and logistics needs.
-											
-												</p>
-											
-										</article>
-									</div>
-							</section>
+.project-title-center {
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-					</div>
+.project-title-center h3 {
+    color: rgba(66, 0, 128, 0.85);
+    margin-bottom: 0;
+}
 
-				<!-- Footer -->
-					<footer id="footer">
-						
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
+.project-content {
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+.project-content p {
+    margin-bottom: 0;
+}
 
-						
-							
-						</section>
-						<p></p>
-					</footer>
+</style>
+<body class="is-preload">
 
-			</div>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <!-- Header -->
+        <header id="header">
+            <h1>Highlights of My Project Experience</h1>
+        </header>
 
-	</body>
+        <!-- Main -->
+       
+
+                
+
+                    
+<!-- Deloitte -->
+<div class="project-row">
+
+    <div class="project-title-center">
+        <h3>
+            <strong>Deloitte Audit Platform</strong>
+        </h3>
+    </div>
+
+    <div class="project-content">
+        <p>
+            Omnia is Deloitte’s cloud-based audit platform that uses AI,
+            analytics, and real-time collaboration to deliver efficient,
+            high-quality, and insight-driven audits.
+
+            <br><br>
+
+            The platform enables auditors across regions to manage audit
+            engagements, working papers, compliance activities,
+            and reporting through a centralized digital ecosystem.
+
+            <br><br>
+
+            As part of the enablement project, Levvia working papers
+            were integrated into Omnia to ensure seamless workflows,
+            improved compatibility, and standardized audit processes
+            across multiple regions.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- DebiCheck -->
+<div class="project-row">
+
+    <div class="project-title-center">
+        <h3>
+            <strong>DebiCheck</strong>
+        </h3>
+    </div>
+
+    <div class="project-content">
+        <p>
+            DebiCheck is a secure debit order authentication system
+            used for recurring payments in South Africa.
+
+            <br><br>
+
+            Transactions included TT1 (real-time messaging),
+            TT2 (batch processing), and TT3
+            (real-time USSD authentication).
+
+            <br><br>
+
+            The process covered prepayment (mandate),
+            payment (collection), and post-payment dispute handling.
+        </p>
+    </div>
+
+</div>
+
+<!-- Payments -->
+<div class="project-row">
+
+    <div class="project-title-center">
+        <h3>
+            <strong>Payments & Collections</strong>
+        </h3>
+    </div>
+
+    <div class="project-content">
+        <p>
+            Payments and collections involved AML compliance checks
+            for Cross Border Monetary Area (CBMA) transactions
+            involving Namibia, Eswatini, and Lesotho.
+
+            <br><br>
+
+            Transactions passed through SAFEWATCH and SWIFT
+            validation using debtor and creditor information
+            to prevent fraudulent activity.
+
+            <br><br>
+
+            Key benefits included enhanced customer trust,
+            reduced fraud, operational efficiency,
+            and improved cash flow management.
+        </p>
+    </div>
+
+</div>
+
+<!-- Other Projects -->
+<div class="project-row">
+
+    <div class="project-title-center">
+        <h3>
+            <strong>Other Projects</strong>
+        </h3>
+    </div>
+
+    <div class="project-content">
+        <p>
+            <strong>FNZ Wealth Management</strong> —
+            Global wealth management and investment platform.
+
+            <br><br>
+
+            <strong>BNY Mellon</strong> —
+            Migration from legacy banking messaging systems
+            to SWIFT infrastructure.
+
+            <br><br>
+
+            <strong>FedEx Logistics</strong> —
+            Express, freight, and international logistics services.
+        </p>
+    </div>
+
+</div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
